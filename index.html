@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>E Store</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <section class="bg-[#000] p-2 text-sm ">
+        <div class="max-w-screen-lg mx-auto p-2 text-white  capitalize text-center ">
+            Summar sales for all swim suites and free express delivery - OFF 50%! <a href="">ShopNow</a>
+        </div>
+
+    </section>
+
+    <section id="nav" class="mt-7 py-3 mb-2 border-b border-gray-300">
+        <nav class="max-w-screen-lg mx-auto p-2">
+            <div class="flex justify-between items-center gap-1 flex-wrap ">
+                <h2 class="font-extrabold">Exclusive</h2>
+                <div class="flex items-center gap-6 flex-wrap">
+                    <a href="">Home</a>
+                    <a href="">Contact</a>
+                    <a href="">About</a>
+                    <a href="">Sign Up</a>
+                </div>
+                <div class="flex items-center justify-center gap-3 flex-wrap">
+
+                    <div class="bg-[#F5F5F5] flex justify-center items-center gap-2 text-sm py-2 px-3.5 rounded-sm">
+                        <input type="text" placeholder="What are you looking for?">
+                        <i class="fa fa-search"></i>
+                    </div>
+
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+    <section class="mt-6">
+        <div class="max-w-screen-lg mx-auto p-2 flex gap-5 flex-wrap">
+            <nav class="flex flex-col gap-3 border-r pr-4 border-gray-300">
+                <a href="">Women's Fashion <i class="fa fa-arrow-right"></i> </a>
+                <a href="">Men's Fashion <i class="fa fa-arrow-right"></i> </a>
+                <a href="">Electronics</a>
+                <a href="">Home & Lifestyle</a>
+                <a href="">Medicine</a>
+                <a href="">Sports & Outdoor</a>
+                <a href="">Babys & Tooy</a>
+            </nav>
+            <div class="banner swiper w-full md:w-3/4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/nav_banner.png" alt="Banner 1" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/nav_banner.png" alt="Banner 2" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/nav_banner.png" alt="Banner 3" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+                <!-- Add pagination (dots) -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sales Section -->
+    <section class="mt-25">
+        <div class="max-w-screen-lg mx-auto p-2">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-red-500">Flash Sales</h2>
+                <a href="#" class="text-red-500 hover:underline">View All Products</a>
+            </div>
+            <div class="swiper flash-sales-swiper">
+                <div class="swiper-wrapper gap-4 " id="flash-sales-container">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse by Category Section (unchanged) -->
+    <section class="mt-25">
+        <div class="max-w-screen-lg mx-auto p-2">
+            <h2 class="text-xl font-bold mb-4 text-red-500">Browse by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-100 px-4 py-6 rounded text-center flex items-center justify-center flex-col gap-1">
+                    <i class="fa fa-tshirt text-3xl mb-2"></i>
+                    <p>Fashion</p>
+                </div>
+                <div class="bg-gray-100 px-4 py-6 rounded text-center flex items-center justify-center flex-col gap-1">
+                    <i class="fa fa-mobile-alt text-3xl mb-2"></i>
+                    <p>Electronics</p>
+                </div>
+                <div class="bg-gray-100 px-4 py-6 rounded text-center flex items-center justify-center flex-col gap-1">
+                    <i class="fa fa-couch text-3xl mb-2"></i>
+                    <p>Home</p>
+                </div>
+                <div class="bg-gray-100 px-4 py-10 rounded text-center flex items-center justify-center flex-col gap-1">
+                    <i class="fa fa-heartbeat text-3xl mb-2"></i>
+                    <p>Health</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Selling Section -->
+    <section class="mt-10">
+        <div class="max-w-screen-lg mx-auto p-2">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-red-500">Best Selling</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="best-selling-container">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Section (unchanged) -->
+    <section class="mt-10">
+        <div class="max-w-screen-lg mx-auto">
+            <img src="./assets/images/promo_banner.png" alt="Promo Banner" class="w-full h-auto object-cover rounded">
+        </div>
+    </section>
+
+    <!-- Explore Our Products Section -->
+    <section class="mt-10">
+        <div class="max-w-screen-lg mx-auto p-2">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-red-500">Explore Our Products</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="explore-products-container">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section (unchanged) -->
+    <section class="mt-10">
+        <div class="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl sm:text-3xl font-bold text-red-500">New Arrivals</h2>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div class="w-full sm:w-1/2">
+                    <img src="./assets/images/new_arrival1.png" alt="Product 1"
+                        class="w-full h-auto object-cover rounded-lg" />
+                </div>
+                <div class="w-full sm:w-1/2 flex flex-col gap-4">
+                    <div>
+                        <img src="./assets/images/new_arrival2.png" alt="Product 2"
+                            class="w-full h-auto object-cover rounded-lg" />
+                    </div>
+                    <div class="flex flex-row gap-4">
+                        <img src="./assets/images/new_arrival3.png" alt="Product 3"
+                            class="w-1/2 h-auto object-cover rounded-lg" />
+                        <img src="./assets/images/new_arrival4.png" alt="Product 4"
+                            class="w-1/2 h-auto object-cover rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section (unchanged) -->
+    <footer class="bg-black text-white py-6 mt-10">
+        <div class="max-w-screen-lg mx-auto p-2 flex flex-wrap justify-between">
+            <div>
+                <h3 class="text-lg font-bold mb-2">About Us</h3>
+                <p class="text-sm">We are an e-commerce platform offering the best deals.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Quick Links</h3>
+                <ul class="text-sm">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+                <div class="flex gap-2">
+                    <a href="#" class="hover:text-gray-400"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Existing Swiper scripts -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+        });
+
+        const flashSalesSwiper = new Swiper('.flash-sales-swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 2,
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    </script>
+
+    <!-- Script to load products -->
+    <script type="module">
+        import ProductService from './assets/js/product.js';
+
+        async function loadProducts() {
+            try {
+                // Load Flash Sale products
+                const flashSaleProducts = await ProductService.getFlashSaleProducts();
+                ProductService.renderProducts(flashSaleProducts, '#flash-sales-container');
+
+                // Load Best Selling products
+                const bestSellingProducts = await ProductService.getBestSellingProducts();
+                ProductService.renderProducts(bestSellingProducts, '#best-selling-container');
+
+                // Load Explore Our Products
+                const exploreProducts = await ProductService.getExploreProducts();
+                ProductService.renderProducts(exploreProducts, '#explore-products-container');
+
+                // Re-initialize Swiper for Flash Sales after dynamic content is added
+                flashSalesSwiper.update();
+            } catch (error) {
+                console.error('Failed to load products:', error);
+            }
+        }
+
+        // Load products when the page loads
+        document.addEventListener('DOMContentLoaded', loadProducts);
+    </script>
+</body>
+
+</html>
