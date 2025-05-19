@@ -124,9 +124,9 @@ class ProductService {
     // Create product cards
     products.forEach(product => {
       const productCard = `
-        <div class="bg-white shadow rounded group">
+        <div class="bg-white shadow rounded group ">
           <div class="bg-gray-100 p-4 rounded mb-2 relative">
-            <img src="${product.image}" alt="${product.name}" class="w-full max-w-[200px] max-h-[200px] mx-auto h-auto object-cover">
+            <img src="${product.image}" alt="${product.name}" class="w-full max-w-[200px] h-[200px] mx-auto object-cover">
             <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white text-center py-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
               Add to Cart
             </div>

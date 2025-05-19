@@ -88,7 +88,7 @@
                 <a href="#" class="text-red-500 hover:underline">View All Products</a>
             </div>
             <div class="swiper flash-sales-swiper">
-                <div class="swiper-wrapper gap-4 " id="flash-sales-container">
+                <div class="swiper-wrapper gap-4 overflow-auto " id="flash-sales-container">
                     <!-- Products will be dynamically inserted here -->
                 </div>
             </div>
@@ -224,26 +224,34 @@
         });
 
         const flashSalesSwiper = new Swiper('.flash-sales-swiper', {
-            loop: true,
+            loop: true, // Enables infinite scrolling
             pagination: {
                 el: '.swiper-pagination',
-                clickable: true,
+                clickable: false, // Allows clicking on dots to navigate
             },
             autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
+                delay: 3000, // Slides every 3 seconds
+                disableOnInteraction: false, // Keeps autoplay even after user interaction
             },
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 1, // Default: 1 slide visible
+            spaceBetween: 10, // Default: 10px space between slides
             breakpoints: {
+                640: {
+                    slidesPerView: 2, // 2 slides visible on screens >= 640px
+                    spaceBetween: 20, // 20px space between slides
+                },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 3, // 3 slides visible on screens >= 768px
+                    spaceBetween: 30, // 30px space between slides
                 },
                 1024: {
-                    slidesPerView: 4,
+                    slidesPerView: 4, // 4 slides visible on screens >= 1024px
+                    spaceBetween: 40, // 40px space between slides
                 },
             },
         });
+
+
     </script>
 
     <!-- Script to load products -->
